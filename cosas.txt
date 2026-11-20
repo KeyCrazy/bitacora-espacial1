@@ -1,0 +1,20 @@
+
+        {cargando && <p role="status">Cargando noticias...</p>}
+
+        {error && <p role="alert">No se pudieron cargar las noticias: {error}</p>}
+
+        {!cargando && !error && (
+          <div className="grid-noticias">
+            {noticias.map((noticia) => (
+              <NoticiaCard
+                key={noticia.id}
+                titulo={noticia.title}
+                resumen={noticia.summary}
+                imagen={noticia.image_url}
+                fuente={noticia.news_site}
+                fecha={noticia.published_at}
+                enlace={noticia.url}
+              />
+            ))}
+          </div>
+        )}
