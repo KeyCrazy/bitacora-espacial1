@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
+amimport { useState, useEffect } from 'react'
 import NoticiaCard from './components/NoticiaCard/NoticiaCard';
 import './App.css'
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.example.VITE_API_URL;
 
 function App() {
 
