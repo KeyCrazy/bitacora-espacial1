@@ -1,4 +1,4 @@
-amimport { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import NoticiaCard from './components/NoticiaCard/NoticiaCard';
 import './App.css'
 
